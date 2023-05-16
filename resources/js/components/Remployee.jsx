@@ -128,6 +128,8 @@ const handleSubmit = (e) => {
                             Registrar Empleado
                         </Button>
                     </div>
+                    <br />
+                    <br />
                 </Form>
             </Container>
         </>

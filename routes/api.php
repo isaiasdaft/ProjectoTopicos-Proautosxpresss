@@ -29,17 +29,16 @@ Route::post('changePassword', [PassportAuthController::class, 'update']);
 //Rutas api de tienda
 Route::middleware('auth:api')->group(function(){
 
-    //employee
+    //rutas de empleados
     Route::post('DEmplo', [EmployeeController::class, 'destroy']);
     Route::post('REmplo', [EmployeeController::class, 'create']);
     Route::post('BEmplo', [EmployeeController::class, 'show']);
 
     
-    //Shop
+    //rutas de tiendas
     Route::get('/Btienda', [TiendaController::class, 'show']);
     Route::post('/Rtienda', [TiendaController::class, 'createT']);
     Route::post('/Dtienda', [TiendaController::class, 'destroy']);
-
 
     //rutas api de provedores
     Route::post('DProv', [ProvedoresController::class, 'destroy']);

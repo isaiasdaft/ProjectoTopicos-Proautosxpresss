@@ -112,6 +112,8 @@ const handleSubmit = (e) => {
                             Agregar proveedor
                         </Button>
                     </div>
+                    <br/>
+                    <br/>
                 </Form>
             </Container>
         </>
